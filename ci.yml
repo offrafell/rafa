@@ -1,3 +1,13 @@
+name: Java CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 name: Reusable Workflow
 # Define o nome do workflow como "Reusable Workflow".
 
@@ -30,3 +40,4 @@ jobs:
 
         run: echo ${{ inputs.message }}
         # Executa o comando para imprimir a mensagem fornecida no input.
+
